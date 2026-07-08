@@ -1,8 +1,12 @@
+import nltk
+nltk.download("stopwords")
+nltk.download("wordnet")
+nltk.download("omw-1.4")
 import streamlit as st
 import joblib
 import sys
 import os
-
+from preprocessing import clean_text
 # ------------------------------
 # Page Configuration
 # ------------------------------
